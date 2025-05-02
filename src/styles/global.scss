@@ -98,6 +98,8 @@ body {
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
+    min-width: 80px;
+    text-align: left;
   }
 
   &__dropdown {
