@@ -26,10 +26,10 @@ const TaskList: FC<Props> = ({ tasks }) => {
       <div className="task-table__header">
         <div className="task-table__col task-table__col--status">
           <button
-            className="task-table__filter-btn"
+            className={`task-table__filter-btn ${dropdownOpen ? 'is-open' : ''}`}
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
-            Status ▾
+            Status
           </button>
           {dropdownOpen && (
             <ul className="task-table__dropdown">
